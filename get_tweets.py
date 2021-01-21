@@ -1,10 +1,20 @@
+#!/usr/bin/env python
+
+"""
+This file allows to get tweet content from the Twitter API.
+"""
+
+import os
+
 import tweepy
 import csv
-import os
 from dotenv import load_dotenv
 
+__author__="Amaury Faure"
 
+#Load credentials to acess twitter API, credentials are personal therefore not included.
 load_dotenv("credentials.env")
+#Access twitter API
 auth = tweepy.AppAuthHandler(os.getenv("consumer_key"), os.getenv("consumer_secret"))
 api = tweepy.API(auth)
 
