@@ -1,7 +1,5 @@
 # Get Tweets
 
-## Français
-
 Ce code a pour but de récupérer des tweets contenant du contenu potentiellement ofenssant à partir d'une liste de stopwords.
 
 Le code principal est contenu dans le fichier `get_tweets.py`, un compte développeur twitter est nécéssaire pour l'utiliser.
