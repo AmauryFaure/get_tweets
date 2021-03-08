@@ -1,8 +1,14 @@
-# get_tweets
+# Get Tweets
 
-This code is made to get some tweet content from tweets of potentially harmful contents. 
-Tweets obtained from the code are stored in `potential_tweets.csv` or `potential_tweets_xxx.csv`.
+## Français
 
-Tweets selected as harmful are stored in `selected_tweets.csv`
+Ce code a pour but de récupérer des tweets contenant du contenu potentiellement ofenssant à partir d'une liste de stopwords.
 
-This work also uses some tweets from [MLMA hate speech](https://github.com/HKUST-KnowComp/MLMA_hate_speech.git).
+Le code principal est contenu dans le fichier `get_tweets.py`, un compte développeur twitter est nécéssaire pour l'utiliser.
+
+Un output d'un run du fichier est obtenu dans `potential_tweets.csv`.
+
+Quand les tweets obtenus éatient insuffisant, les fichiers `potentiel_tweets_xxx.csv` ont été générés. 
+
+La liste des stopwords est contenue dans `stopwords.csv`
+La liste des tweets selectionné comme étant dangereux est incluse dans `selected_tweets.csv`, certains proviennent de [MLMA hate speech](https://github.com/HKUST-KnowComp/MLMA_hate_speech.git).
